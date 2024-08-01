@@ -29,10 +29,14 @@ PostMessage, 0x202, 0, 0, Button2, ahk_exe Stub.exe ; WM_LBUTTONUP
 
 Sleep, 1000
 
-PostMessage, 0x201, 0, 0, Button3, ahk_exe Stub.exe ; WM_LBUTTONDOWN
-PostMessage, 0x202, 0, 0, Button3, ahk_exe Stub.exe ; WM_LBUTTONUP
+PostMessage, 0x201, 0, 0, Static4, ahk_exe Stub.exe ; WM_LBUTTONDOWN
+PostMessage, 0x202, 0, 0, Static4, ahk_exe Stub.exe ; WM_LBUTTONUP
 
 Sleep, 1000
 
-PostMessage, 0x201, 0, 0, Static4, ahk_exe Stub.exe ; WM_LBUTTONDOWN
-PostMessage, 0x202, 0, 0, Static4, ahk_exe Stub.exe ; WM_LBUTTONUP
+PostMessage, 0x201, 0, 0, Button3, ahk_exe Stub.exe ; WM_LBUTTONDOWN
+PostMessage, 0x202, 0, 0, Button3, ahk_exe Stub.exe ; WM_LBUTTONUP
+
+
+
+
