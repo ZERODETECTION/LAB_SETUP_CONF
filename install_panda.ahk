@@ -9,6 +9,8 @@ RunWait, cmd.exe /c curl -O http://acs.pandasoftware.com/Panda/FREEAV/190612/PAN
 
 Run, cmd.exe /c PANDAFREEAV.exe
 
+Sleep, 1000
+
 WinWait, ahk_exe Stub.exe,, 10 ;
 WinActivate, ahk_exe Stub.exe
 ControlGet, ControlList, List,, Button,, ahk_exe Stub.exe
