@@ -6,7 +6,7 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetControlDelay -1
 
 ;Run, cmd.exe /c curl -O https://download.bitdefender.com/windows/installer/de-de/bitdefender_avfree.exe
-RunWait, cmd.exe /c curl -O http://acs.pandasoftware.com/Panda/FREEAV/190612/PANDAFREEAV.exe
+RunWait, cmd.exe /c curl -O https://download.bitdefender.com/windows/installer/de-de/bitdefender_avfree.exe
 
 Run, cmd.exe /c bitdefender_avfree.exe
 
