@@ -20,6 +20,24 @@ WinActivate, ahk_exe ProductAgentUI.exe
 WinWait, ahk_exe Installer.exe
 WinActivate, ahk_exe Installer.exe
 
+;3x tab, space, 2x tab, space,  5x tab, space
+
+; 3x Tab
+Send, {Tab 3}
+; Space
+Send, {Space}
+
+; 2x Tab
+Send, {Tab 2}
+; Space
+Send, {Space}
+
+; 5x Tab
+Send, {Tab 5}
+; Space
+Send, {Space}
+
+
 
 
 ;PostMessage, 0x201, 0, 0, Button3, ahk_exe Stub.exe ; WM_LBUTTONDOWN
