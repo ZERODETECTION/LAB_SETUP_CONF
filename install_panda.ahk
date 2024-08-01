@@ -17,10 +17,12 @@ WinActivate, ahk_exe Stub.exe
 PostMessage, 0x201, 0, 0, Button3, ahk_exe Stub.exe ; WM_LBUTTONDOWN
 PostMessage, 0x202, 0, 0, Button3, ahk_exe Stub.exe ; WM_LBUTTONUP
 
-;ControlGet, ControlList, List,, Button,, ahk_exe Stub.exe
+Sleep, 3000
 
+;ControlGet, ControlList, List,, Button,, ahk_exe Stub.exe
 ;MsgBox, %ControlList%
 ;ControlClick, Button2,, ahk_exe Stub.exe
+
 
 PostMessage, 0x201, 0, 0, Button2, ahk_exe Stub.exe ; WM_LBUTTONDOWN
 PostMessage, 0x202, 0, 0, Button2, ahk_exe Stub.exe ; WM_LBUTTONUP
