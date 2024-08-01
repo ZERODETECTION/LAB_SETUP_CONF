@@ -13,7 +13,11 @@ Sleep, 1000
 
 WinWait, ahk_exe Stub.exe,, 10 ;
 WinActivate, ahk_exe Stub.exe
-ControlGet, ControlList, List,, Button,, ahk_exe Stub.exe
+
+PostMessage, 0x201, 0, 0, Button3, ahk_exe Stub.exe ; WM_LBUTTONDOWN
+PostMessage, 0x202, 0, 0, Button3, ahk_exe Stub.exe ; WM_LBUTTONUP
+
+;ControlGet, ControlList, List,, Button,, ahk_exe Stub.exe
 
 ;MsgBox, %ControlList%
 ;ControlClick, Button2,, ahk_exe Stub.exe
