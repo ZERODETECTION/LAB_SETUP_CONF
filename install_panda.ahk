@@ -1,3 +1,4 @@
+;curl -O https://raw.githubusercontent.com/ZERODETECTION/LAB_SETUP_CONF/main/install_panda.ahk; install_panda.ahk
 #NoEnv
 #Warn  ; Enable warnings to assist with detecting common errors.
 #NoTrayIcon
