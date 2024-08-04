@@ -11,7 +11,7 @@ net start "uwfs"
 Enable-WindowsOptionalFeature -Online -FeatureName Client-UnifiedWriteFilter -All
 Disable-WindowsOptionalFeature -Online -FeatureName Client-UnifiedWriteFilter
 
-
+uwfmgr overlay set-size 2048
 uwfmgr volume protect c:
 uwfmgr filter enable
 
