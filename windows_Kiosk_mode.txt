@@ -17,6 +17,7 @@ uwfmgr volume protect c:
 uwfmgr filter enable
 
 https://learn.microsoft.com/en-us/windows/iot/iot-enterprise/customize/uwfoverlay
+https://www.tenaka.net/uwf
 
 
 uwfmgr.exe file add-exclusion c:\foo\
