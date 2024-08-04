@@ -15,7 +15,7 @@ Disable-WindowsOptionalFeature -Online -FeatureName Client-UnifiedWriteFilter
 uwfmgr volume protect c:
 uwfmgr filter enable
 
-
+https://learn.microsoft.com/en-us/windows/iot/iot-enterprise/customize/uwfoverlay
 
 
 uwfmgr.exe file add-exclusion c:\foo\
