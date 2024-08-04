@@ -14,3 +14,17 @@ Disable-WindowsOptionalFeature -Online -FeatureName Client-UnifiedWriteFilter
 
 uwfmgr volume protect c:
 uwfmgr filter enable
+
+
+
+
+uwfmgr.exe file add-exclusion c:\foo\
+Ein Wartungsmodus lässt sich auch manuell setzen. Während dieser aktiv ist, können neue Programme oder Updates für Programme installiert werden.
+
+uwfmgr servicing enable
+Wichtig ist, dass der Rechner erst neu gestartet wird, bevor mit der Wartung begonnen wird. Nach getaner Arbeit lässt sich der Wartungsmodus wieder deaktivieren.
+
+uwfmgr servicing disable
+Sollen nur Windows Updates installiert werden, muss kein Wartungsmodus gesetzt werden. Diese können direkt im laufenden Betrieb installiert werden.
+
+uwfmgr servicing update-windows
