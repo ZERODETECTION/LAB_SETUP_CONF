@@ -1,0 +1,12 @@
+
+https://blog.doenselmann.com/windows-schreibschutz-mit-uwf/
+https://learn.microsoft.com/en-us/windows/client-management/mdm/unifiedwritefilter-csp
+
+
+Get-WindowsOptionalFeature -Online -FeatureName Client-UnifiedWriteFilter | fl * -force
+Get-Service -Name "uwfs"
+uwfmgr filter state
+Set-Service -Name "uwfs" -StartupType Automatic
+net start "uwfs"
+Enable-WindowsOptionalFeature -Online -FeatureName Client-UnifiedWriteFilter -All
+Disable-WindowsOptionalFeature -Online -FeatureName Client-UnifiedWriteFilter
