@@ -10,3 +10,6 @@ Set-Service -Name "uwfs" -StartupType Automatic
 net start "uwfs"
 Enable-WindowsOptionalFeature -Online -FeatureName Client-UnifiedWriteFilter -All
 Disable-WindowsOptionalFeature -Online -FeatureName Client-UnifiedWriteFilter
+
+
+uwfmgr filter enable
