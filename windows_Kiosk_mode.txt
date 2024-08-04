@@ -12,4 +12,5 @@ Enable-WindowsOptionalFeature -Online -FeatureName Client-UnifiedWriteFilter -Al
 Disable-WindowsOptionalFeature -Online -FeatureName Client-UnifiedWriteFilter
 
 
+uwfmgr volume protect c:
 uwfmgr filter enable
